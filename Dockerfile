@@ -20,7 +20,7 @@ RUN ./gradlew bootJar -x test
 
 # 2단계: Runtime stage (최종 애플리케이션 실행)
 # 애플리케이션 실행에 필요한 JRE만 포함된 이미지를 사용합니다.
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 COPY --from=builder /app/build/libs/*.jar app.jar
