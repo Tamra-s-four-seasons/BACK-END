@@ -4,3 +4,7 @@ spring:
     username: myuser
     password: mypass123
     driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG        # HikariCP ??? ? ??
+    org.springframework.jdbc: DEBUG  # Spring JDBC
