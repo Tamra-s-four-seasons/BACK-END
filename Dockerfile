@@ -5,7 +5,7 @@ FROM gradle:jdk21-alpine AS builder
 
 # Docker 이미지 내의 작업 디렉토리를 /app으로 설정합니다.
 WORKDIR /app
-kubectl port-forward sts/mysql 3306:3306 -n goormthon-4
+
 # 현재 빌드 컨텍스트의 모든 파일을 /app 디렉토리로 복사합니다.
 # 이 때 gradlew 파일도 함께 복사됩니다.
 COPY . .
