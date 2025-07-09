@@ -4,12 +4,14 @@ spring:
     username: myuser
     password: mypass123
     driver-class-name: com.mysql.cj.jdbc.Driver
-logging:
-  level:
-    com.zaxxer.hikari: DEBUG        # HikariCP ??? ? ??
-    org.springframework.jdbc: DEBUG  # Spring JDBC
+
   jpa:
     hibernate:
-      ddl-auto: none      # ??? update/create ?
+      ddl-auto: none
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG
+    org.springframework.jdbc: DEBUG
