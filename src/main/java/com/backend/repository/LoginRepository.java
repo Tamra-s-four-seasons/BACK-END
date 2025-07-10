@@ -15,9 +15,9 @@ public class LoginRepository {
 
         // 2) UPSERT 실행
         String sql = """
-            select user_id from users where user_id=? and password=?;
+            select nickname from users where user_id=? and password=?;
             """;
-        System.out.println(request.getId() + " " +request.getPassword());
+
         return jdbcTemplate.queryForObject(
                 sql,
                 String.class,
