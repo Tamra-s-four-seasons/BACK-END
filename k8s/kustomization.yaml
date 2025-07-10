@@ -1,0 +1,11 @@
+resources:
+  - backend.yaml
+  - ingress.yaml
+
+configMapGenerator:
+  - name: java-backend-config #fix me
+    files:
+      - config.json=config/backend-config.json
+
+generatorOptions:
+  disableNameSuffixHash: true

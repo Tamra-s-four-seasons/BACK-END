@@ -4,7 +4,6 @@ import com.backend.dto.request.CheckPointRequest;
 import com.backend.dto.request.InProgressCreateRequest;
 import com.backend.dto.response.InProgressMissionResponse;
 import com.backend.dto.response.MissionCheckPointResponse;
-import com.backend.dto.response.MissionCompleteResponse;
 import com.backend.dto.response.RouteResponse;
 import com.backend.service.JwtService;
 import com.backend.service.MissionService;
