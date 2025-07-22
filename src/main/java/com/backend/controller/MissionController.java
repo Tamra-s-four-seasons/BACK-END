@@ -5,7 +5,6 @@ import com.backend.dto.request.InProgressCreateRequest;
 import com.backend.dto.response.InProgressMissionResponse;
 import com.backend.dto.response.MissionCheckPointResponse;
 import com.backend.dto.response.RouteResponse;
-import com.backend.service.JwtService;
 import com.backend.service.MissionService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +18,6 @@ import java.util.List;
 public class MissionController {
 
     private final MissionService missionService;
-    private final JwtService jwtService;
 
     @Operation(summary = "진행중인 미션 리스트 확인 요청")
     @GetMapping("/in-progress")
